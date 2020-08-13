@@ -165,8 +165,6 @@ $(function() {
         }
         if(check == true){
             alert("Thông tin đã được ghi nhận")
-        }else{
-            alert("Có lỗi sảy ra vui lòng thử lại")
         }
         
         return check;
