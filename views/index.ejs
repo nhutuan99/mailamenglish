@@ -58,9 +58,9 @@
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item"> <a class="nav-link active" href="#home">TRANG CHỦ <span class="sr-only">(current)</span></a> </li>
                                 <li class="nav-item"> <a class="nav-link" href="#features">GIỚI THIỆU</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#gallery">ẢNH</a> </li>
-                                <li class="nav-item"> <a class="nav-link" href="#contact">LIÊN HỆ</a> </li>
-                                <li class="nav-item"><a href="#" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Download</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="#video">VIDEO</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#contact">TƯ VẤN</a> </li>
+                                <li class="nav-item"><a href="#" id="link" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Download</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -132,40 +132,13 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
-
-
     </div>
-      <!-- // end .section -->
 
-      <div class="section">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" width="100%" height="100%"  allow="autoplay; encrypted-media" allowfullscreen></iframe> 
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <div>
-                   
-                        <h2>TVC giới thiệu app</h2>
-                        <p class="mb-4">
-                            Ứng dụng tự học tiếng anh “Mailam English” do trung tâm ngoại ngữ Mai Lâm thiết kế và xây dựng, đáp ứng nhu cầu học tiếng Anh cho người mất căn bản theo hình thức học online qua Video dành cho tất cả học viên trong và ngoài nước.
-                            Học viên có thể chủ động về thời gian học, học ở bất kỳ đâu, bất kỳ lúc nào.<br>
-                            Phương pháp dạy học khác biệt do chính Thầy Mai Lâm biên soạn và giảng dạy dành riêng cho người mất căn bản Tiếng Anh.<br>
-                            <br>
-                         </p>
-                        <a href="#" class="btn btn-primary">Read more</a></div>
-                </div>
-            </div>
 
-        </div>
 
-    </div>
-    <!-- // end .section -->
-
+    
     <div class="section light-bg">
         <div class="container">
             <div class="section-title">
@@ -247,15 +220,36 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
  
+      <!-- // end .section -->
+
+      <div class="section" id="video">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F4-Kjv-p6vM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Xem thêm chi tiết</h2>
+                        <p class="mb-4">
+                            Ứng dụng tự học tiếng anh “Mailam English” do trung tâm ngoại ngữ Mai Lâm thiết kế và xây dựng, đáp ứng nhu cầu học tiếng Anh cho người mất căn bản theo hình thức học online qua Video dành cho tất cả học viên trong và ngoài nước.
+                            Học viên có thể chủ động về thời gian học, học ở bất kỳ đâu, bất kỳ lúc nào.<br>
+                            Phương pháp dạy học khác biệt do chính Thầy Mai Lâm biên soạn và giảng dạy dành riêng cho người mất căn bản Tiếng Anh.<br>
+                            <br>
+                         </p>
+                        <a href="#support" class="btn btn-primary">Read more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- // end .section -->
 
 
-    <div class="section light-bg">
 
+    <div class="section light-bg" id="support">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 d-flex align-items-center">
@@ -499,6 +493,7 @@
     <!-- Custom JS -->
     <script src="assets/script.js"></script>
 
+
      <!-- Load Facebook SDK for JavaScript -->
      <div id="fb-root"></div>
      <script>
@@ -508,14 +503,31 @@
            version          : 'v8.0'
          });
        };
- 
        (function(d, s, id) {
-       var js, fjs = d.getElementsByTagName(s)[0];
-       if (d.getElementById(id)) return;
-       js = d.createElement(s); js.id = id;
-       js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-       fjs.parentNode.insertBefore(js, fjs);
-     }(document, 'script', 'facebook-jssdk'));</script>
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+     </script>
+     <!-- Load Facebook SDK for JavaScript -->
+
+
+<!-- change link -->
+<script>
+    document.getElementById("link").onclick = function() {
+       if( /iPhone|iPad/i.test(navigator.userAgent) ) {
+     document.getElementById("link").href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
+       }
+       else if( /Android/i.test(navigator.userAgent) ) {
+          document.getElementById("link").href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
+       }
+       else{
+          alert("Ứng dụng chưa hỗ trợ trên PC")
+       }
+ }
+ </script>
  
      <!-- Your Chat Plugin code -->
      <div class="fb-customerchat"
