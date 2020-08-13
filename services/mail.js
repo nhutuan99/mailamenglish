@@ -1,4 +1,4 @@
-import nodemailer from 'nodemailer';
+const nodemailer = require ('nodemailer');
 async function send(to,subject,content){
 const transporter =nodemailer.createTransport({
     host: 'smtp.gmail.com',

@@ -133,8 +133,11 @@ $(function() {
   
     /*==================================================================
     [ Validate ]*/
+
+  
+
     var name = $('.contact-from .validate-input input[name="name"]');
-    var sdt = $('.contact-from .validate-input input[name="sdt"]');
+    var phoneNumber = $('.contact-from .validate-input input[name="phoneNumber"]');
     var message = $('.validate-input textarea[name="message"]');
 
 
@@ -145,8 +148,8 @@ $(function() {
             showValidate(name);
             check=false;
         }
-        if($(sdt).val().trim()==''){
-            showValidate(sdt);
+        if($(phoneNumber).val().trim()==''){
+            showValidate(phoneNumber);
             check=false;
         }
 
@@ -160,7 +163,12 @@ $(function() {
             showValidate(message);
             check=false;
         }
-      
+        if(check == true){
+            alert("Thông tin đã được ghi nhận")
+        }else{
+            alert("Có lỗi sảy ra vui lòng thử lại")
+        }
+        
         return check;
     });
 
@@ -186,3 +194,26 @@ $(function() {
     
 
 })(jQuery);
+
+function check(e){
+    var name = document.getElementById('name');
+    var email = document.getElementById('email');
+    var phoneNumber = document.getElementById('phoneNumber');
+    var message = document.getElementById('message');
+    var check = true;
+    if(name.value == ''){
+        showValidate(name);
+        check=false;
+    }
+    if(phoneNumber.value == ''){
+        showValidate(phoneNumber);
+        check=false;
+    }
+    if(message.value == ''){
+        showValidate(message);
+        check=false;
+    }
+
+    return check;
+  
+}

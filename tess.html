@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+      </script>
+      <script>
+         function functionAlert(msg, myYes) {
+            var confirmBox = $("#confirm");
+            confirmBox.find(".message").text(msg);
+            confirmBox.find(".yes").unbind().click(function() {
+               confirmBox.hide();
+            });
+            confirmBox.find(".yes").click(myYes);
+            confirmBox.show();
+         }
+      </script>
+      <style>
+         #confirm {
+            display: none;
+            background: -moz-linear-gradient(top,  #00d2ff 0%, #3a7bd5 100%);
+            background: -webkit-linear-gradient(top, #00d2ff 0%, #3a7bd5 100%);
+            background: linear-gradient(to bottom,  #00d2ff 0%, #3a7bd5 100%);
+            color: #FFFFFF;
+
+            position: fixed;
+            width: 350px;
+            left: 50%;
+            margin-left: -100px;
+            padding: 6px 8px 8px;
+            box-sizing: border-box;
+            text-align: center;
+         }
+         #confirm button {
+            background-color: #48E5DA;
+            display: inline-block;
+            border: 1px solid #aaa;
+            padding: 5px;
+            text-align: center;
+            width: 65px;
+            cursor: pointer;
+         }
+         #confirm .message {
+            text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="confirm">
+         <div class="message">Yêu cầu đã được ghi nhận</div>
+         <button class="yes" id="ok" onkeypress=" functionAlert()">OK</button>
+      </div>
+      <input type="button" value="Click Me" onclick="functionAlert();" />
+
+      <script>
+          function runScript(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+        var tb = document.getElementById("ok");
+        eval(tb.value);
+        return false;
+    }
+}
+      </script>
+   </body>
+</html>
