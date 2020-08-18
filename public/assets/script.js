@@ -1,13 +1,3 @@
-/*
-
-Style   : MobApp Script JS
-Version : 1.0
-Author  : Surjith S M
-URI     : https://surjithctly.in/
-
-Copyright © All rights Reserved 
-
-*/
 
 $(function() {
     "use strict";
@@ -214,4 +204,29 @@ function check(e){
 
     return check;
   
+}
+
+function change(e){
+    if(e.id==1){
+        document.getElementById("largeImg").src = 'upload/login.png';
+
+    }
+    if(e.id == 2){
+        document.getElementById("largeImg").src = 'upload/baihoc.png';
+    }
+    if(e.id == 3){
+        document.getElementById("largeImg").src = 'upload/login.png';
+    }
+}
+
+document.getElementById("link").onclick = function() {
+    if( /iPhone|iPad/i.test(navigator.userAgent) ) {
+  document.getElementById("link").href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
+    }
+    else if( /Android/i.test(navigator.userAgent) ) {
+       document.getElementById("link").href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
+    }
+    else{
+       alert("Ứng dụng chưa hỗ trợ trên PC")
+    }
 }
