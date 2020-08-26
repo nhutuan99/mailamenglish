@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+
+@font-face{
+  font-family:"utm-eremitage";
+  src:url("../fonts/utm-eremitage.ttf")
+}
+
+
+
+
 /*
 
 Style   : MobApp CSS
@@ -198,6 +207,7 @@ p.lead {
 }
 
 .navbar-nav .nav-link {
+    color: black;
     position: relative;
 }
 
@@ -209,7 +219,7 @@ p.lead {
     }
     .navbar-nav>.nav-item>.nav-link.active:after {
         content: "";
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid black;
         left: 1rem;
         right: 1rem;
         bottom: 5px;
@@ -234,23 +244,31 @@ p.lead {
 header {
     padding: 100px 0 0;
     text-align: center;
-    color: #FFF;
+    color: black;
 }
 
 .bg-gradient {
-    background-image: -moz-linear-gradient( 135deg, #00d2ff 0%, #3a7bd5 100%);
-    background-image: -webkit-linear-gradient( 135deg, #00d2ff 0%, #3a7bd5 100%);
-    background-image: -ms-linear-gradient( 135deg, #00d2ff 0%, #3a7bd5 100%);
-    background-image: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+
+  background-image: url("../upload/background.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
+
+
 .tagline {
+  text-align: left;
     font-size: 23px;
     font-weight: 300;
     color:#92c0e8;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 550px;
+    font-family: utm-eremitage;font-size:42px;text-transform:none;color:#F32951
+
 }
+
 
 .img-holder {
     height: 0;
@@ -421,17 +439,16 @@ header {
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
     padding: 1rem 1rem;
-    border-color: #faf6fb #faf6fb #FFF;
+    border-color: black;
     font-size: 19px;
-    color: #b1cbe0;
-    background: #f5eff7;
+    color: black;
+    background: black;
 }
 
 .nav-tabs .nav-link.active {
-    background: #FFF;
+    background: black;
     border-top-width: 3px;
-    border-color: #3a7bd5 #faf6fb #FFF;
-    color: #64a8e3;
+ 
 }
 
 
