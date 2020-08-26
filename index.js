@@ -23,6 +23,7 @@ app.post('/',bodyParser.urlencoded({ extended: false }),async(req,res)=>{
     //     return res.render('index');
 })
 app.use(express.static('public'));
+
 app.listen(process.env.PORT,()=>{
-    console.log("app listen on");
+    console.log(`app listen on 3000`);
 })
