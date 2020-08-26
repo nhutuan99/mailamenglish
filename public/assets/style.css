@@ -106,6 +106,7 @@ p.lead {
 
 .btn-outline-light:hover {
     color: #3a7bd5;
+    background-origin: padding-box;
 }
 
 .btn-primary {
@@ -133,7 +134,7 @@ p.lead {
 
 .btn-light {
     border-radius: 3px;
-    background: #FFF;
+    background: rgb(126, 174, 238);
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.26);
     font-size: 14px;
     font-weight: 500;
@@ -182,6 +183,7 @@ p.lead {
 .nav-menu {
     padding: 1rem 0;
     transition: all 0.3s ease;
+    color:#FFF;
 }
 
 .nav-menu.is-scrolling,
@@ -201,10 +203,11 @@ p.lead {
     position: relative;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 500px) {
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1rem;
-        padding-left: 1rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
         font-size: 14px;
     }
     .navbar-nav>.nav-item>.nav-link.active:after {
@@ -220,7 +223,7 @@ p.lead {
 
 @media (max-width:991px) {
     .navbar-nav.is-scrolling {
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
     }
     .navbar-nav .nav-item {
         text-align: center;
@@ -233,15 +236,15 @@ p.lead {
 
 header {
     padding: 100px 0 0;
-    text-align: center;
-    color: #FFF;
+    color: rgb(247, 199, 199);
+    position: relative;
 }
 
 .bg-gradient {
-    background-image: -moz-linear-gradient( 135deg, #00d2ff 0%, #3a7bd5 100%);
-    background-image: -webkit-linear-gradient( 135deg, #00d2ff 0%, #3a7bd5 100%);
-    background-image: -ms-linear-gradient( 135deg, #00d2ff 0%, #3a7bd5 100%);
-    background-image: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+    background-image: -moz-linear-gradient( 135deg, #fcfcfc 0%, #fcfcfc 100%);
+    background-image: -webkit-linear-gradient( 135deg, #fcfcfc 0%, #fcfcfc 100%);
+    background-image: -ms-linear-gradient( 135deg, #fcfcfc 0%, #fcfcfc 100%);
+    background-image: linear-gradient(135deg, #fcfcfc 0%, #fcfcfc 100%);
 }
 
 .tagline {
@@ -255,6 +258,7 @@ header {
 .img-holder {
     height: 0;
     padding-bottom: 33%;
+    padding-left: 28%;
     overflow: hidden;
 }
 
@@ -422,7 +426,7 @@ header {
 .nav-tabs .nav-link:hover {
     padding: 1rem 1rem;
     border-color: #faf6fb #faf6fb #FFF;
-    font-size: 19px;
+    font-size: 14px;
     color: #b1cbe0;
     background: #f5eff7;
 }
