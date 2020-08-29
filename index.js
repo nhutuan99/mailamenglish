@@ -1,7 +1,6 @@
 const express = require ('express');
 const dotenv =require( "dotenv");
 const bodyParser = require('body-parser');
-const {send} = require('./services/mail');
 const form = require('./services/form');
 dotenv.config();
 const app = express();
@@ -23,7 +22,6 @@ app.post('/',bodyParser.urlencoded({ extended: false }),async(req,res)=>{
     //     return res.render('index');
 })
 app.use(express.static('public'));
-
 app.listen(process.env.PORT,()=>{
-    console.log(`app listen on 3000`);
+    console.log(`app listen on ${process.env.PORT} `);
 })
