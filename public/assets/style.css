@@ -294,9 +294,9 @@ header {
 }
 
 .text{
-  position: absolute;
-  top: 10px;
-  left: 70px;
+  position:absolute;
+  top:250px
+  
 }
 
   mark {
@@ -305,15 +305,19 @@ header {
 }
 
 
+@media screen and (min-width: 601px) {
+  .tagline {
+    font-size: 80px;
+  }
+}
+
 .tagline {
   text-align: left;
-    font-size: 23px;
-    font-weight: 300;
     color:#92c0e8;
-    max-width: 550px;
-    font-family: utm-eremitage;font-size:42px;text-transform:none;color:#F32951
+    font-family: utm-eremitage;font-size:3.7vw;text-transform:none;
 
 }
+
 
 
 .img-holder {
