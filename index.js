@@ -10,6 +10,8 @@ app.set('view engine','ejs');
 app.get('/',(req,res)=>{
     res.render('index');
 });
+
+
 app.post('/',bodyParser.urlencoded({ extended: false }),async(req,res)=>{
     console.log("submit");
     // const info={
