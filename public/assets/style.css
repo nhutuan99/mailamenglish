@@ -328,14 +328,6 @@ mark {
   }
 }
 
-.tagline {
-    text-align: left;
-    color:#92c0e8;
-    font-family: utm-eremitage;font-size:3.7vw;text-transform:none;
-    font-size: 45px;
-    font-weight: 300;
-}
-
 
 @media (max-width:1200px) {
     .img-holder {
@@ -344,9 +336,7 @@ mark {
 }
 
 @media (max-width:767px) {
-    .tagline {
-        font-size: 17px;
-    }
+
     .img-holder {
         padding-bottom: 100%;
     }
