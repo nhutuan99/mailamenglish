@@ -85,17 +85,17 @@ h4 {
 }
 
 h5 {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 300;
+  width: 100%;
   color: blanchedalmond;
-  margin-bottom: 0.7rem;
-  font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
   color: black;
-  font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
-  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
 }
 p.mb-4{
   color: black;
@@ -125,7 +125,7 @@ h4.mb-3 {
 }
 
 .btn {
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
   padding: 0.375rem 1.35rem;
   transition: all 0.3s ease;
@@ -240,8 +240,9 @@ color: #008CBA;
 ----------------------*/
 
 .nav-menu {
-  transition: all 0.3s ease;
-  color:#FFF;
+    padding: 0;
+    transition: all 0.5s ease-in;
+    color:#FFF;
 }
 
 .nav-menu.is-scrolling,
@@ -262,21 +263,20 @@ color: #008CBA;
   position: relative;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 500px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right: 1.3rem;
-      padding-left: 1.3rem;
-      padding-bottom: 0.5rem;
+      padding-right: 2rem;
+      padding-left: 2rem;
       padding-top: 0.5rem;
-      font-size: 16px;
-      font-family: utm-eremitage;text-transform:none;
+      font-size: 12px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   .navbar-nav>.nav-item>.nav-link.active:after {
       content: " ";
       border-bottom: 1.5px solid black;
       left: 1rem;
       right: 1rem;
-      bottom: 6px;
+      bottom: 5px;
       height: 1px;
       position: absolute;
   }
@@ -297,18 +297,16 @@ color: #008CBA;
 ----------------------*/
 
 header {
-    padding: 100px 0 390px ;
-    color: rgb(247, 199, 199);
-    position: relative;
-    font-family: utm-eremitage;text-transform:none;
+  padding: 150px 0 300px;
+  color: rgb(247, 199, 199);
+  width: 100%;
 }
 
 .bg-gradient {
     background-image: url("../upload/background.png");
     background-position: bottom; /* Bottom the image */
     background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: contain;
-    font-family: utm-eremitage;text-transform:none;
+    background-size: cover;
 }
 
 mark {
@@ -316,10 +314,6 @@ mark {
   color: white;
 }
 
-  mark {
-    background-color: rgb(105, 105, 103);
-    color: white;
-}
 
 
 @media screen and (min-width: 601px) {
@@ -350,8 +344,9 @@ mark {
   background-position: bottom; /* Bottom the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  padding: 50px 0 50px;
+  padding: 30px 0 30px;
 }
+
 .gradient-fill:before {
     color: #3a7bd5;
     background: -moz-linear-gradient(top, #00d2ff 0%, #3a7bd5 100%);
@@ -361,9 +356,11 @@ mark {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .card-body{
     background-color: #008fb2;
     color: #fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .card.features {
     border: 0;
@@ -374,6 +371,8 @@ mark {
 .card-title{
   color: yellow;
   font-weight: bold;
+  font-size: 18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media (max-width:991px) {
@@ -402,6 +401,7 @@ mark {
 .card-text {
     font-size: 18px;
     color: #ffffff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card.features:hover {
@@ -474,12 +474,20 @@ mark {
 
 /*  TABS
 ----------------------*/
-
-.tab-content {
+#intro{
   background-image: url(../upload/background/3.png);
   background-position: bottom; /* Bottom the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  padding: 30px 0 30px;
+}
+
+.tab-content {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.04);
+  padding: 3rem;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media (max-width:992px) {
@@ -491,7 +499,7 @@ mark {
 .tab-content p {
     line-height: 1.8;
     color: black;
-    font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
 
@@ -520,6 +528,7 @@ mark {
     color: black;
     font-size: 16px;
     font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .nav-tabs .nav-item{
     padding-right: 10px;
@@ -527,12 +536,35 @@ mark {
 
 /*  TESTIMONIALS
 ----------------------*/
-#video{
-  background-image: url(../upload/background/3.png);
-  background-position: bottom; /* Bottom the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover;
+section#video{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 0;
 }
+  #video .video__content{
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr .6fr;
+      grid-template-rows: repeat(3, 1fr);
+  }
+      #video .video__content .video__content--item{
+          border-radius: 2px;
+          background: #008eaf !important;
+      }
+      #video .video__content .video-item1{
+          grid-row: 1 / 4;
+
+      }
+      #video .video__content .video-item2{
+          height: 150px;
+          grid-row: 1 /2.5;
+      }
+      #video .video__content .video-item3{
+          grid-row: 1 /2.5;
+
+      }
+
 .owl-carousel .owl-item img.client-img {
     width: 220px;
     margin: 30px auto;
@@ -547,10 +579,6 @@ mark {
     text-align: center;
     max-width: 80%;
     margin: 0 auto;
-    background-image: url(../upload/background/3.png);
-    background-position: bottom; /* Bottom the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover;
 }
 
 .blockquote {
@@ -620,9 +648,18 @@ mark {
 ----------------------*/
 #support{
   background-image: url(../upload/background/2.png);
+  background-position: center; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 30px 0 30px;
+}
+
+#famous{
+  background-image: url(../upload/background/3.png);
   background-position: bottom; /* Bottom the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  padding: 30px 0 0;
 }
 .media :hover{
   background-color: #d9d3d8;
@@ -630,6 +667,7 @@ mark {
   padding: 0 10px 0;
   color: #008fb2;
 }
+
 @media (max-width:992px) {
     .card-deck {
         -ms-flex-direction: column;
@@ -680,7 +718,7 @@ mark {
 }
 
 .card.pricing .card-body {
-    padding: 1.75rem;
+    padding: 0.5rem;
 }
 
 
@@ -691,7 +729,17 @@ mark {
   background-position: bottom; /* Bottom the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  padding: 30px 0 30px;
 }
+
+#artical{
+  background-image: url(../upload/background/3.png);
+  background-position: bottom; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 30px 0 30px;
+}
+
 .call-to-action {
     text-align: center;
     color: #FFF;
@@ -722,7 +770,138 @@ mark {
     margin-right: 0.4rem;
     vertical-align: text-bottom;
 }
+/*CONTACT - Tuan
+----------------------*/
+section#advisory{
+  height: 100%;
+  width: 100%;
+  margin-top: 20px;
+  background: url("../upload/background/9.png");
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  background-blend-mode: screen;
+  background-position: center center;
+}
+  #advisory .advisory__title{
+      color: #fff;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-weight: bolder;
+      font-size: 25px;
+      text-align: center;
+      padding: 2% 0 0 0;
+      margin-bottom: 0;
+  }
+  #advisory .advisory__form, #advisory .hidden{
+      width: 80%;
+      margin: 0 auto;
+      padding: 5%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+  }
+      #advisory .advisory__form .advisory__form-infor{
+          display: flex;
+          flex-direction: column;
+      }
+          #advisory .advisory__form .advisory__form-infor p{
+              height: 200%;
+              display: flex;
+              align-items: center;
+              color: #008aef;
+              font-weight: 800;
+              padding: 5% 0 4% 0;
+              font-size: 1.5rem;
 
+          }
+      #advisory .advisory__form .advisory__form-input{
+          height: 91%;
+          display: grid;
+          grid-gap: 5%;
+      } 
+          #advisory .advisory__form .advisory__form-input input{
+              border: none;
+              outline: none;
+              background: transparent;
+              display: flex;
+              align-items: center;
+              position: relative;
+              color: #000;
+              font-weight: 800;
+              font-size: 1.5rem;
+              border-bottom: 4px solid #dbe2e1;
+          }
+              
+
+  #advisory .advisory__contact{
+      padding: 2%;
+      color: #fff;
+      text-align: center;
+      font-size: 2em;
+  }
+      #advisory .advisory__contact .advisory__contact--phone{
+          font-size: 1.5rem;
+      }
+          #advisory .advisory__contact .advisory__contact--phone span{
+              color: yellow;
+              font-weight: 900;
+          }
+/*Responsive advisory*/
+@media screen and (max-width: 800px){
+  #advisory .advisory__form .advisory__form-infor p{
+      font-size: 1.1rem;
+  }
+  #advisory .advisory__form .advisory__form-input input{
+      font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 650px){
+  #advisory .advisory__form{
+      display: flex;
+  }
+  #advisory .unhidden{
+      display: none;
+  }
+  #advisory .hidden{
+      
+      display: block !important;
+      margin-top: 12% ;
+  }
+  #advisory .div-hidden{
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+  }
+  #advisory .hidden p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #008aef;
+    font-weight: 800;
+    font-size: 0.8rem;
+    }
+    #advisory .hidden input{
+      margin: 0 auto;
+      width: 80%;
+      border: none;
+      outline: none;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      position: relative;
+      color: #000;
+      font-weight: 600;
+      font-size: 0.8rem;
+      margin-top: -10%;
+      margin-bottom: 2%;
+      border-bottom: 4px solid #dbe2e1;
+    }
+    #advisory .advisory__contact{
+      font-size: 1.45em;
+    }
+}
 
 /*  FOOTER
 ----------------------*/
@@ -731,7 +910,9 @@ mark {
     background-position: bottom; /* Bottom the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
+    padding: 30px 0 30px;
 }
+
 .social-icons {
     text-align: right;
 }
@@ -763,30 +944,7 @@ mark {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* from *>
-
-
-
-
-
-
-
-
-
 
 /*---------------------------------------------*/
 .contact-from input {
@@ -846,10 +1004,13 @@ mark {
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
 #contact{
-  background-image: url(../upload/background/2.png);
-  background-position: bottom; /* Bottom the image */
+  background-image: url(../upload/background/9.png);
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
+  background-size: 100% 100%;
+  background-blend-mode: screen;
+  background-position: center center;
+  padding: 30px 0 30px;
 }
 .contact-from .container-contact100 {
   width: 100%;  

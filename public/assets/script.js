@@ -217,6 +217,9 @@ function change(e){
     if(e.id == 3){
         document.getElementById("largeImg").src = 'upload/login.png';
     }
+    if(e.id == 4){
+        document.getElementById("largeImg").src = 'upload/baihoc.png';
+    }
 }
 
 document.getElementById("link").onclick = function() {
