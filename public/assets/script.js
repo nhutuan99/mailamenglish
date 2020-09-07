@@ -131,7 +131,7 @@ $(function() {
     var message = $('.validate-input textarea[name="message"]');
 
 
-    $('.contact-from .validate-form').on('submit',function(){
+    $('form-style-4').on('submit',function(){
         var check = true;
 
         if($(name).val().trim() == ''){
@@ -218,15 +218,34 @@ function change(e){
         document.getElementById("largeImg").src = 'upload/login.png';
     }
 }
+function dowload(element){
 
-document.getElementById("link").onclick = function() {
     if( /iPhone|iPad/i.test(navigator.userAgent) ) {
-  document.getElementById("link").href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
+        element.href = "https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"
     }
-    else if( /Android/i.test(navigator.userAgent) ) {
-       document.getElementById("link").href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
+    else if(/Android/i.test(navigator.userAgent)){
+        element.href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
     }
     else{
-       alert("Ứng dụng chưa hỗ trợ trên PC")
+        alert("Ứng dụng chưa hỗ trợ trên PC")
     }
 }
+
+function adjust_textarea(h) {
+    h.style.height = "20px";
+    h.style.height = (h.scrollHeight)+"px";
+}
+
+    // document.getElementById("link").onclick = function() {
+    //     if( /iPhone|iPad/i.test(navigator.userAgent) ) {
+    //   document.getElementById("link").href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
+    //     }
+    //     else if( /Android/i.test(navigator.userAgent) ) {
+    //        document.getElementById("link").href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
+    //     }
+    //     else{
+    //        alert("Ứng dụng chưa hỗ trợ trên PC")
+    //     }
+    // }
+    
+

@@ -25,5 +25,5 @@ app.post('/',bodyParser.urlencoded({ extended: false }),async(req,res)=>{
 app.use(express.static('public'));
 
 app.listen(process.env.PORT,()=>{
-    console.log(`app listen on 3000`);
+    console.log(`app listen on 3001`);
 })

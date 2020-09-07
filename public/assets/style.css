@@ -102,6 +102,7 @@ p.lead {
 }
 
 .light-font {
+  color: #333333;
     font-weight: 300;
 }
 
@@ -160,7 +161,7 @@ p.lead {
 }
 
 .light-bg {
-    background-color: #faf6fb;
+    background-color: #fff;
 }
 
 .section {
@@ -187,7 +188,14 @@ p.lead {
 
 /*NAVBAR BUTTON*/
 
-
+/* VIDEO*/
+#video{
+  background-image: url(../upload/background/3.png);
+  background-position: bottom; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 30px 0 30px;
+}
 
 .glow-on-hover {
     padding:10px 30px;
@@ -524,7 +532,13 @@ header {
 
 /* FEATURES
 ----------------------*/
-
+#features {
+  background-image: url(../upload/background/2.png);
+  background-position: bottom; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 30px 0 30px;
+}
 .gradient-fill:before {
     color: #3a7bd5;
     background: -moz-linear-gradient(top, #00d2ff 0%, #3a7bd5 100%);
@@ -552,20 +566,21 @@ header {
 }
 
 .card.features:before {
-    content: "";
-    position: absolute;
-    width: 3px;
-    color: #3a7bd5;
-    background: -moz-linear-gradient(top,  #00d2ff 0%, #3a7bd5 100%);
-    background: -webkit-linear-gradient(top, #00d2ff 0%, #3a7bd5 100%);
-    background: linear-gradient(to bottom,  #00d2ff 0%, #3a7bd5 100%);
-    top: 0;
-    bottom: 0;
-    left: 0;
+  content: "";
+  position: absolute;
+  width: 3px;
+  color: #FFF;
+  background: -moz-linear-gradient(top,  #FFF 0%, #FFF 100%);
+  background: -webkit-linear-gradient(top, #FFFf 0%, #FFF 100%);
+  background: linear-gradient(to bottom,  #FFF 0%, #FFF 100%);
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .card-text {
-    font-size: 14px;
+    font-size: 18px;
+    color: #fff;
 }
 
 .card.features:hover {
@@ -638,12 +653,17 @@ header {
 
 /*  TABS
 ----------------------*/
+#introduce{
+  background-image: url(../upload/background/3.png);
+
+  background-position: bottom; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 30px 0 30px;
+}
 
 .tab-content {
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    background-color: #FFF;
-    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.04);
+ 
     padding: 3rem;
 }
 
@@ -668,28 +688,39 @@ header {
 .nav-tabs .nav-item .nav-link,
 .nav-tabs .nav-link:focus,
 .nav-tabs .nav-link:hover {
-    padding: 1rem 1rem;
-    border-color: #faf6fb #faf6fb #FFF;
-    font-size: 14px;
-    color: #b1cbe0;
-    background: #f5eff7;
+  padding: 0.5rem 0.5rem;
+  border-color: #faf6fb #faf6fb #FFF;
+  color: #FFF;
+  background: #008fb2;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .nav-tabs .nav-link.active {
-    background: black;
-    border-top-width: 3px;
+  background: #f5eff7;
+  border-color: black;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
  
 }
 
 
 /*  TESTIMONIALS
 ----------------------*/
-
+#customer{
+  background-image: url(../upload/background/3.png);
+  background-position: bottom; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 30px 0 30px;
+}
 .owl-carousel .owl-item img.client-img {
-    width: 110px;
-    margin: 30px auto;
-    border-radius: 50%;
-    box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
+  width: 220px;
+  margin: 30px auto;
+  border-radius: 50%;
+  box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
+  max-height: 500px;
 }
 
 .testimonials-single {
@@ -733,6 +764,13 @@ header {
 /*  IMAGE GALLERY
 ----------------------*/
 
+#artical{
+  background-image: url(../upload/background/3.png);
+  background-position: bottom; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 30px 0 30px;
+}
 .img-gallery .owl-item {
     box-shadow: 0px 9px 32px 0px rgba(0, 0, 0, 0.07);
     transform: scale(0.8);
@@ -799,11 +837,24 @@ header {
 .card.pricing .card-body {
     padding: 1.75rem;
 }
-
+.card-body{
+  background-color: #008fb2;
+  color: #fff;
+}
+.card-title{
+  color: yellow;
+  font-weight: bold;
+}
 
 /*  CALL TO ACTION
 ----------------------*/
-
+#question{
+  background-image: url(../upload/background/8.png);
+  background-position: bottom; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 30px 0 30px;
+}
 .call-to-action {
     text-align: center;
     color: #FFF;
@@ -838,7 +889,13 @@ header {
 
 /*  FOOTER
 ----------------------*/
-
+#footer{
+  background-image: url("../upload/background/3.png");
+  background-position: bottom; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 30px 0 30px;
+}
 .social-icons {
     text-align: right;
 }
@@ -878,24 +935,97 @@ header {
 
 
 
+#support{
+  background-image: url(../upload/background/2.png);
+  background-position: bottom; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  position: relative;
+  padding: 30px 0 30px;
+}
 
 
 
 
+
+
+
+
+
+.form-style-4{
+
+	font-size: 20px;
+	background: #ebf5f2;
+	padding: 30px 30px 15px 30px;
+
+}
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label
+{
+	font-size: 26px;
+	color: #3b8cac;
+
+}
+.form-style-4 label {
+	display:block;
+	margin-bottom: 10px;
+}
+.form-style-4 label > span{
+  text-align: left;
+	display: inline-block;
+	width: 400px;
+}
+.form-style-4 input[type=text],
+.form-style-4 input[type=email] 
+{
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid #83A4C5;
+	width: 60%;
+	outline: none;
+	padding: 0px 0px 0px 0px;
+	font-style: italic;
+}
+
+
+.form-style-4 textarea:focus, 
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus
+{
+	border-bottom: 1px dashed #D9FFA9;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button]{
+	background: #576E86;
+	border: none;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color: #A8BACE;
+}
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover{
+background: #394D61;
+}
 
 
 /* from *>
 
 
 
-
-
-
-
-
-
-
 /*---------------------------------------------*/
+#contact{
+  background-image: url(../upload/background/5.png);
+  background-position: bottom; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding: 30px 0 30px;
+}
 .contact-from input {
 	outline: none;
 	border: none;
@@ -966,7 +1096,7 @@ header {
 }
 
 .contact-from .wrap-contact100 {
-  width: 500px;
+  width: 50%;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -1225,7 +1355,90 @@ header {
   }
 }
 
+/*submit button*/
+.wrap {
+  margin-top: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.wrap .button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #fff;
+  background: #008CBA;
+
+  border: none;
+  border-radius: 1000px;
+
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+  .wrap  button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0,255,203,.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.wrap  .button:hover, .button:focus {
+  color: #fff;
+  transform: translateY(-6px);
+}
+
+.wrap  button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+.wrap  button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.wrap  button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
 
 /*//////////////////////////////////////////////////////////////////
 [ Restyle Select2 ]*/
