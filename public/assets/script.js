@@ -222,14 +222,15 @@ function change(e){
     }
 }
 
-document.getElementById("link").onclick = function() {
+function dowload(element){
+
     if( /iPhone|iPad/i.test(navigator.userAgent) ) {
-  document.getElementById("link").href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
+        element.href = "https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"
     }
-    else if( /Android/i.test(navigator.userAgent) ) {
-       document.getElementById("link").href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
+    else if(/Android/i.test(navigator.userAgent)){
+        element.href="https://apps.apple.com/us/app/anh-ngữ-mai-lâm/id1509669643"; 
     }
     else{
-       alert("Ứng dụng chưa hỗ trợ trên PC")
+        alert("Ứng dụng chưa hỗ trợ trên PC")
     }
 }
