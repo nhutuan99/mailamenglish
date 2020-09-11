@@ -13,11 +13,15 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./public/assets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Themify Icons -->
     <link rel="stylesheet" href="./public/assets/themify-icons.css">
     <link rel="stylesheet" href="./public/assets/owl.carousel.min.css">
     <!-- Main css -->
     <link href="./public/assets/style.css" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="../mailam/public/upload/logo.png"/>
+
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
@@ -28,55 +32,42 @@
 
     <!-- Nav Menu -->
 
-    <div class="nav-menu fixed-top">
-       
+    <div class="nav-menu fixed-top" >
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-dark navbar-expand-lg">
-                        <a class="offset-1" href="#"><img id="logo" src="./public/upload/logo.jpg"  class="img-fluid" alt="logo"></a ><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <a href="#"><img src="../mailam/public/upload/background/logo.PNG" alt="logo"></a><a class="nav-link" style="font-family:Verdana, Geneva, Tahoma, sans-serif;color: black; font-size: large">MAILAM<br>ENGLISH</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item"> <a class="nav-link active" style="color: black;" href="#home">TRANG CHỦ <span class="sr-only">(current)</span></a> </li>
-                                <li class="nav-item"> <a class="nav-link" style="color: black;" href="#features">VỀ MAILAM ENGLSH</a> </li>
-                                <li class="nav-item"> <a class="nav-link" style="color: black;" href="#video">VIDEO</a></li>
-                                <li class="nav-item"> <a class="nav-link" style="color: black;" href="#artical">BÁO CHÍ</a> </li>
-                                <li class="nav-item"> <a class="nav-link" style="color: black;" href="#support">HỌC THỬ</a></li>
-                                <li class="nav-item" id="dowload" style="padding-top: 0.5rem;"><a href="#" onclick="down(this)" class="glow-on-hover">DOWNLOAD</a></li>
+                                <li class="nav-item"> <a class="nav-link active" style="color: black;" href="#home">TRANG CHỦ<span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" style="color: black; " href="#features">VỀ MAILAM ENGLSH</a></li>
+                                <li class="nav-item"> <a class="nav-link" style="color: black; " href="#video">VIDEO</a></li>
+                                <li class="nav-item"> <a class="nav-link" style="color: black; " href="#artical">BÁO CHÍ</a> </li>
+                                <li class="nav-item"> <a class="nav-link" style="color: black; " href="#contact">HỌC THỬ</a></li>
+                                <li class="nav-item" id="dowload"><button href="#" onclick="dowload(this)" class="btn glow-on-hover">DOWNLOAD</button></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
-            </div>
-      
+            </div> 
+        </div>
     </div>
-
-
     <header class="bg-gradient" id="home">
-        <div class="container md-offset-2 col-md-8">
-            <div class="animate__animated animate__fadeInLeft"  style="font-size:calc(26px + 1.5vw); font-weight: bolder; color: #008CBA;">APP HỌC GIAO TIẾP</div>
-            <p class="animate__animated animate__fadeInRight" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:calc(18px + 1.5vw);text-align: left; color: #008CBA;">CHO NGƯỜI BẬN RỘN</p>
-            <h5 class="animate__animated animate__fadeInUpBig" style="font-family: sans-serif;text-align: left;font-size:calc(7px + 1.5vw); color: rgb(241, 241, 250);"><mark >Học lại từ đầu - Học để dùng được</mark></h5>
+        <div class="container col-md-8">
+            <div  class="animate__animated animate__fadeInLeft"  style="font-size:calc(23px + 1.5vw); font-weight: bolder; color: #1f9ac3; font-family: utm-eremitage;text-transform:none;">APP HỌC GIAO TIẾP</div>
+            <p class="animate__animated animate__fadeInRight" style="font-size:calc(23px + 1.5vw);text-align: left; color: #1f9ac3; font-family:Verdana, Geneva, Tahoma, sans-serif;">CHO NGƯỜI BẬN RỘN</p>
+            <h5 class="animate__animated animate__fadeInUpBig" style="text-align: left;font-size:calc(7px + 1.5vw); color: rgb(241, 241, 250); font-family:Verdana, Geneva, Tahoma, sans-serif;"><mark >Học lại từ đầu - Học để dùng được</mark></h5>
             <br>
             <div class="animate__animated animate__fadeInUp">
-                <a href="#support"><button class="button button--nanuk button--round-l button--text-thick button--inverted">
-                    <span>HỌC &nbsp</span><span>THỬ &nbsp</span><span>NGAY</span>
-                    </button></a>
-                <a href="#features"> <button class="button button--nanuk button--round-l button--text-thick button--right">
-                    <span>&nbsp&nbsp&nbspGIỚI &nbsp</span><span>THIỆU&nbsp&nbsp&nbsp</span>
-                    </button></a>  
+                <a href="#support"><button class="btn btn-button2" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">HỌC THỬ NGAY</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#features"><button class="btn btn-button1" style="font-family:Verdana, Geneva, Tahoma, sans-serif;">GIỚI THIỆU</button></a>
             </div>
-
+            
+            <p style="font-family:Verdana, Geneva, Tahoma, sans-serif; color: black; font-size:calc(10px + 1vw);text-align: left; position: relative; top: 260px;">Mang cả "Trường Học" về nhà<br>Hỗ Trợ : <a href="tel:0358 118 228" style="color: black;"><strong style="font-weight: bold;">0358 118 228</a></strong></p>
         </div>
- 
-        <div class="img-holder mt-3 ml-lg-1">   </div>
-        <div class="container md-offset-2 col-md-8">  
-            <div class="animate__animated animate__rollIn">
-           <a href="https://www.facebook.com/Anh.Ngu.Mai.Lam.2020/" target="_blank"><img id="loading" style="width:50px;" src="./public/upload/fb-icon.png"> </a> 
-        <p style="display: inline;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: black; font-size: larger; font-size:x-large;">Mang "Trường Học" về nhà</p>
-       <a href="tel:0358118228"><p>Hỗ Trợ : <strong style="font-weight: bold;">0358 118 228</strong></p> </a>
-        </div>
-    </div>
-    </header>
+        </header >
 
 
     <div class="section light-bg" id="features">
@@ -253,13 +244,13 @@
         </div>
         <div class="row">
     
-            <div class="col-md-9 d-flex align-items-center">
+            <div class="col-md-8 d-flex align-items-center">
                 <ul class="list-unstyled ui-steps">
                     <li class="media" id="3" onmouseover="change(this)">
                        
                         <div class="media-body">
                             <h5  style="color:#fff">1. Tạo tài khoản</h5>
-                            <p style="color:black;font-size:18px">Tải ứng dụng: hiện tại ứng dụng đã có mặt trên 2 nền tảng android và ios:
+                            <p style="color:black;font-size:16px">Tải ứng dụng: hiện tại ứng dụng đã có mặt trên 2 nền tảng android và ios:
                                  nhấn vào <a style="color: #fff;" href="#support" onclick="down(this)">ĐÂY</a>để tải ứng dụng</p> 
                         
                         </div>
@@ -268,20 +259,20 @@
                       
                         <div class="media-body">
                             <h5  style="color:#fff">2. Đăng ký tài khoản</h5>
-                            <p  style="color:black;font-size:18px">Đăng nhập bằng số điện thoại hoặc gmail<br>Nhập mã code (được gởi về Sđt / gmail) để đăng nhập app</p>
+                            <p  style="color:black;font-size:16px">Đăng nhập bằng số điện thoại hoặc gmail<br>Nhập mã code (được gởi về Sđt / gmail) để đăng nhập app</p>
                         </div>
                     </li>
                     <li class="media"  id="2" onmouseover="change(this)">
                        
                         <div class="media-body">
                             <h5  style="color:#fff">3. Trải nghiệm học thử</h5>
-                            <p  style="color:black;font-size:18px">Học thử 2 bài miễn phí<br>(Lưu ý: Hoàn tất phần luyện tập để chuyển sang bài học tiếp theo)</p>
+                            <p  style="color:black;font-size:16px">Học thử 2 bài miễn phí<br>(Lưu ý: Hoàn tất phần luyện tập để chuyển sang bài học tiếp theo)</p>
                         </div>
                     </li>
                     <li class="media" id="4" onmouseover="change(this)">
                         <div class="media-body">
                             <h5 style="color:#fff">4. Nâng cấp tài khoản: </h5>
-                            <p style="color:black;font-size:18px">Liên hệ hotline: <a style="color: #fff;" href="tel:0358118228"><strong>0358.118.228</strong></a> để nâng cấp gói tài khoản 
+                            <p style="color:black;font-size:16px">Liên hệ hotline: <a style="color: #fff;" href="tel:0358118228"><strong>0358.118.228</strong></a> để nâng cấp gói tài khoản 
                                 và học toàn bộ khóa nền tảng.
                             </p>
                         </div>
@@ -289,11 +280,11 @@
                 </ul> 
             </div>
             <div class="col-md-3">
-                <img src="./public/upload/login.png" alt="iphone" id="largeImg" class="img">
+                <img src="./public/upload/login.png" alt="iphone" id="largeImg" class="img-fluid">
             </div>
         </div>
         <div class="section-title">
-            <h3 style="font-weight: bolder; color: #fff;">XEM <a style="color: #fff;" target="_blank" href="https://youtu.be/-lwVzcNVZfY"><u>VIDEO</u> </a>  HƯỚNG DẪN</h3>
+            <h3 style="font-weight: bolder; color: #fff; text-align: left;">XEM <a style="color: #fff;" target="_blank" href="https://youtu.be/-lwVzcNVZfY"><u>VIDEO</u> </a>  HƯỚNG DẪN</h3>
         </div>
     </div>
 </div>
@@ -309,17 +300,17 @@
             <div class="testimonials-single">
                 <img src="./public/upload/nam cuong.png" alt="client" class="client-img">
                 <h3 >Ca Sĩ Nam Cường</h3>
-                <blockquote class="blockquote"> <a class="h1">“</a>App có phần Video không khác gì với việc nghe Thầy giảng, không hiểu có thể nghe đi nghe lại. App cũng giống như người bạn đồng hành và tận dụng tất cả khoản thời gian rảnh để trau dồi tiếng Anh</blockquote>
+                <blockquote class="blockquote"><a class="h1">“</a>App có phần Video không khác gì với việc nghe Thầy giảng, không hiểu có thể nghe đi nghe lại. App cũng giống như người bạn đồng hành và tận dụng tất cả khoản thời gian rảnh để trau dồi tiếng Anh</blockquote>
             </div>
             <div class="testimonials-single">
                 <img src="./public/upload/truong thinh.png" alt="client" class="client-img">
                 <h3>Diễn viên Trường Thịnh</h3>
-                <blockquote class="blockquote">Ứng dụng MaiLam English có rất nhiều cái giúp ích cho mình đó là có rất nhiều bài học ở trong đó thì trong mỗi bài học có mỗi bài giảng của thầy Mai Lâm trực tiếp giảng dạy và phân tích y như là những lúc Thịnh đến trực tiếp lớp để học vậy. Bên cạnh đó thì thầy Mai Lâm có phương pháp giảng dạy rất dễ hiểu cho những người mất căn bản như Thịnh nhưng khi mình học thầy thì mình đã có thể cải thiện được phần nói và nghe từ việc phát âm và app rất là tiện lợi mình có thể học được mọi lúc mọi nơi.</blockquote>
+                <blockquote class="blockquote"><a class="h1">“</a>Ứng dụng MaiLam English có rất nhiều cái giúp ích cho mình đó là có rất nhiều bài học ở trong đó thì trong mỗi bài học có mỗi bài giảng của thầy Mai Lâm trực tiếp giảng dạy và phân tích y như là những lúc Thịnh đến trực tiếp lớp để học vậy. Bên cạnh đó thì thầy Mai Lâm có phương pháp giảng dạy rất dễ hiểu cho những người mất căn bản như Thịnh nhưng khi mình học thầy thì mình đã có thể cải thiện được phần nói và nghe từ việc phát âm và app rất là tiện lợi mình có thể học được mọi lúc mọi nơi.</blockquote>
             </div>
             <div class="testimonials-single">
                 <img src="./public/upload/an.jpg" alt="client" class="client-img">
                 <h3>Th.S Tâm lý Đào Lê Hoà An</h3>
-                <blockquote class="blockquote">Với cái việc ra đời app như thế này thì tôi thấy nó rất là đáp ứng cái nhu cầu về tâm lý vì rõ ràng là với những người đã đi làm hay là những người có địa vị xã hội thì họ cũng rất lạ ngại để mà có thể trực tiếp đến lớp có rất nhiều người và với cái thời lượng và tính chất công việc của mình thì họ cũng sẽ không có thể sắp xếp được thời gian để có thể đi đến lớp thì thông qua cái hệ thống với công cụ app trực tuyến trên điện thoại như thế này thì đây rõ ràng là một trong những cái hướng mà có thể giúp cho những người bận rộn có thể học bất cứ nơi đâu, bất kỳ chỗ nào và chỉ cần mở app ra là chúng ta có thể tương tác với sự hướng dẫn rất là khoa học cũng như dí dỏm và đặc biệt là rất am hiểu về cái hưởng để có thể giúp cho những người mất gốc tiếng anh có thể lấy lại được cái căn bản và tự tin trong việc giao tiếp tiếng anh với người nước ngoài</blockquote>
+                <blockquote class="blockquote"><a class="h1">“</a>Với cái việc ra đời app như thế này thì tôi thấy nó rất là đáp ứng cái nhu cầu về tâm lý vì rõ ràng là với những người đã đi làm hay là những người có địa vị xã hội thì họ cũng rất lạ ngại để mà có thể trực tiếp đến lớp có rất nhiều người và với cái thời lượng và tính chất công việc của mình thì họ cũng sẽ không có thể sắp xếp được thời gian để có thể đi đến lớp thì thông qua cái hệ thống với công cụ app trực tuyến trên điện thoại như thế này thì đây rõ ràng là một trong những cái hướng mà có thể giúp cho những người bận rộn có thể học bất cứ nơi đâu, bất kỳ chỗ nào và chỉ cần mở app ra là chúng ta có thể tương tác với sự hướng dẫn rất là khoa học cũng như dí dỏm và đặc biệt là rất am hiểu về cái hưởng để có thể giúp cho những người mất gốc tiếng anh có thể lấy lại được cái căn bản và tự tin trong việc giao tiếp tiếng anh với người nước ngoài</blockquote>
             </div>
         </div>
     </div>
@@ -351,7 +342,7 @@
 <div class="section pt-0" id="question">
     <div class="container">
         <div class="section-title">
-            <h3>Góc hỏi đáp</h3>
+            <h3 style="font-weight: bolder;">GÓC HỎI ĐÁP</h3>
         </div>
         <div class="qs">
 
@@ -439,58 +430,44 @@
 <!--end contact-->
 
 <!--begin footer-->
-<div class="light-bg py-5" id="footer">
-    <div class="container">
-        <div class="section-title">
-            <h3 style="font-weight: bolder;">LIÊN HỆ</h3>
-            <h3 style="font-weight:bolder; font-size: large; padding-left: 40px; color: black;
-            font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
-            font-size: 20px;">CTY CỔ PHẦN TRUYỀN THÔNG & GIÁO DỤC QUỐC TẾ RESTART 
-                TRUNG TÂM NGOẠI NGỮ MAI LÂM
-            </h3>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 text-center text-lg-left" style=" color: black;
-            font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
-            font-size: 20px;">
-                <h3 style="font-weight:bolder; font-size: large; color: black; text-align: le; padding-left: 40px;">HOTLINE HỖ TRỢ
-                </h3>
-                <br>
-                <span class="ti-headphone-alt mr-2"> <a target="blank" href="tel:0358118228">0358 118 228</a> -  <a href="tel:0853226228">0853 226 228</a></span><br><br>
-                <span class="ti-facebook mr-2"><a target="blank" href="https://www.facebook.com/Anh.Ngu.Mai.Lam.2020/">Mai Lam English</a> </span><br><br>
-               <span class="ti-youtube mr-2"><a target="blank" href="https://www.youtube.com/channel/UCfQpTLoqIO1GZVtGJtH4UHQ">Nguyễn Mai Lâm</a></span>
-                <br>
-                <br>
-              <span class="ti-world"><a target="blank" href="http://mailam.edu.vn/">mailam.edu.vn</a></span> <br>
-             
+<footer id="footer">
+    <section class="footer__title">Liên hệ</section>
+    <section class="footer__infor">
+        <div class="footer__infor--hotline">
+            <div class="footer__infor--hotline__title" style="font-size: large;">Hotline hỗ trợ</div>
+            <div class="footer__infor--hotline__content">
+                <div class="phone">
+                    <p style="font-size: larger;" class="fa fa-phone-square mr-2"> &nbsp;&nbsp; <a style="font-size: larger;" target="blank" href="tel:0358118228">0358 118 228 </a> - <a style="font-size: larger;" href="tel:0853226228">0853 226 228</a></p>
+                </div>
+                <div class="fb">
+                    <p style="font-size: larger;" class="fa fa-facebook-official mr-2"> &nbsp;&nbsp; <a style="color: black; font-size: larger;" target="blank" href="https://www.facebook.com/Anh.Ngu.Mai.Lam.2020/">Mailam English</p>
+                </div>
+                <div class="youtube">
+                    <p style="font-size: larger;" class="fa fa-youtube mr-2"> &nbsp;&nbsp; <a style="color: black; font-size: larger;" target="blank" href="https://www.youtube.com/channel/UCfQpTLoqIO1GZVtGJtH4UHQ">Nguyễn Mai Lâm</p>
+                </div>
+                <div class="web">
+                    <p style="font-size: larger;" class="fa fa-google mr-2"> &nbsp;&nbsp; <a style="color: black; font-size: larger;" target="blank" href="http://mailam.edu.vn/">Mailam.edu.vn</p>
+                </div>
+                <div class="license">
+                    <p><img class="mr-2" src="./public/upload/dathongbaobct.png" style="width: 150px;" alt="license"></p>                  
+                </div>
             </div>
-            <div class="col-lg-6 text-center text-lg-left">
-          
-                <p class="mb-2"> <span class="ti-location-pin mr-2"></span>  Chi nhánh 1: MAI LÂM QUẬN 3 - 146 Võ Thị Sáu, Phường 8, Quận 3, TP.HCM</p>
-                <p class="mb-2"> <span class="ti-location-pin mr-2"></span>  Chi nhánh 2: MAI LÂM THỦ ĐỨC - Nhà Văn Hoá Sinh Viên, Làng Đại Học Quốc Gia, Q. Thủ Đức, TP.HCM</p>
-                <div class=" d-block d-sm-inline-block">
-                    <p class="mb-2"><span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:anhngumailamcrazy@gmail.com">anhngumailamcrazy@gmail.com</a></p>
-                </div>
-
-                <div class="d-block d-sm-inline-block">
-                    <p class="mb-0"><span class="ti-headphone-alt mr-2"></span><a href="tel:0358118228">0358 118 228</a></p>
-                   
-                </div>
-                <div class="d-block d-sm-inline-block">
-                    <img src="./public/upload/dathongbaobct.png" style="width: 100px;" alt="">
-                   
-                </div>
-                
-            </div>
-            <!-- <div class="col-lg-6">
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/nguyenmailam.info" target="_blank"><span class="ti-facebook"></span></a>
-                    <a href="https://www.youtube.com/channel/UCfQpTLoqIO1GZVtGJtH4UHQ"  target="_blank"><span class="ti-youtube"></span></a>
-                </div>
-            </div> -->
         </div>
-    </div>
-</div>
+        <div class="footer__infor--branch">
+            <div class="footer__infor--branch__title" style="font-size: large;">
+                Công ty cổ phần truyền thông & giáo dục quốc tế restart - trung tâm ngoại ngữ mai lâm
+            </div>
+            <div class="footer__infor--branch__content">
+                <div class="branch-1">
+                    <p style="font-size: large;"> <span class="fa fa-map-marker">&nbsp &nbsp</span> Chi nhánh 1: MAI LÂM QUẬN 3 - 146 Võ Thị Sáu, Phường 8, Quận 3, TP.HCM</p>
+                </div>
+                <div class="branch-2">
+                    <p style="font-size: large;"> <span class="fa fa-map-marker">&nbsp &nbsp</span>  Chi nhánh 2: MAI LÂM THỦ ĐỨC - Nhà Văn Hoá Sinh Viên, Làng Đại Học Quốc Gia, Q. Thủ Đức, TP.HCM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
 <!--end footer-->
 
     <!-- jQuery and Bootstrap -->
