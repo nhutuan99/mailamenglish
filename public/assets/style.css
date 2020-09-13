@@ -360,8 +360,28 @@ header {
     background-position: bottom; /* Bottom the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
+   
+}
+.bg-qr-code {
+  background-image: url("../upload/background/1.png");
+  background-position: center; /* Bottom the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  padding-bottom: 220px;
 }
 
+#loading {
+  -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}
 mark {
   background-color: rgb(105, 105, 103);
   color: white;
@@ -377,17 +397,43 @@ mark {
 
 
 @media (max-width:1200px) {
+    .qr-code-title{
+      text-align: center;
+      font-size: calc(26px + 1.5vw);
+      padding-top: 10%;
+      padding-bottom: 10%;
+      padding-left: 0;
+    }
+    .qr-code-support{
+      text-align: center;
+      font-size: calc(16px + 1vw);
+      position: relative;
+      padding-bottom: 0%;
+      width: 100%;
+      height: 100%;
+      top: -150px;
+    }
     .img-holder {
       padding-top: 10%;
-      padding-bottom: 20%;
+      padding-bottom: 100%;
+      padding-left: 0;
     }
 }
 
 @media (max-width:767px) {
-
+    .qr-code-title{
+      font-size: calc(6px + 1.5vw);
+      padding-bottom: 0%;
+    }
+    .qr-code-support{
+      font-size: calc(6px + 1.5vw);
+      position: relative;
+      padding-bottom: 0%;
+      top: -90px;
+    }
     .img-holder {
-        padding-top: 10%;
-        padding-bottom: 20%;
+        font-size: calc(12px + 1.5vw);;
+        padding-bottom: 30%;
     }
 }
 /* FEATURES
@@ -1173,6 +1219,8 @@ footer#footer{
       height: 10%;
   }
 }
+ 
+
 /*End responsive footer*/
 .social-icons {
     text-align: right;
