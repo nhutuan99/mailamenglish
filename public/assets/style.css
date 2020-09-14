@@ -363,7 +363,7 @@ header {
    
 }
 .bg-qr-code {
-  background-image: url("../upload/background/1.png");
+  background-image: url("../upload/background/2.png");
   background-position: center; /* Bottom the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
@@ -626,7 +626,7 @@ section#video{
   border-color: #faf6fb #faf6fb #FFF;
   color: #FFF;
   background: #008fb2;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -634,7 +634,7 @@ section#video{
   background: #f5eff7;
   border-color: black;
   color: black;
-  font-size: 16px;
+  font-size: 12x;
   font-weight: bold;
  
 }
