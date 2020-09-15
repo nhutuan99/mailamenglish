@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./public/assets/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Themify Icons -->
     <link rel="stylesheet" href="./public/assets/themify-icons.css">
     <link rel="stylesheet" href="./public/assets/owl.carousel.min.css">
@@ -33,7 +34,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <nav class="navbar navbar-dark navbar-expand-lg">
-                        <a class="offset-1" href="#"><img id="logo" src="./public/upload/logo.jpg"  class="img-fluid" alt="logo"></a ><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <a href="#"><img id="logo" src="./public/upload/logo.jpg"  class="img-fluid" alt="logo"></a >
+                        <a style="color: #008CBA; font-weight: bold;" target="_blank" href="download.html" onclick="down(this)" class="navbar-toggler nav-link btn glow-on-hover">DOWNLOAD</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
                         <div class="collapse navbar-collapse" id="navbar">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item"> <a class="nav-link active" style="color: black;" href="#home">TRANG CHỦ <span class="sr-only">(current)</span></a> </li>
@@ -41,7 +44,7 @@
                                 <li class="nav-item"> <a class="nav-link" style="color: black;" href="#video">VIDEO</a></li>
                                 <li class="nav-item"> <a class="nav-link" style="color: black;" href="#artical">BÁO CHÍ</a> </li>
                                 <li class="nav-item"> <a class="nav-link" style="color: black;" href="#support">HỌC THỬ</a></li>
-                                <li class="nav-item" id="dowload" style="padding-top: 0.5rem;"><a target="_blank" href="./download.html" onclick="down(this)" class="glow-on-hover">DOWNLOAD</a></li>
+                                <li class="nav-item" id="download"><a style="color: #008CBA; font-weight: bold;" target="_blank" href="download.html" onclick="down(this)" class="nav-link glow-on-hover">DOWNLOAD</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -53,9 +56,10 @@
 
     <header class="bg-gradient" id="home">
         <div class="container md-offset-2 col-md-8">
-            <div class="animate__animated animate__fadeInLeft"  style="font-size:calc(26px + 1.5vw); font-weight: bolder; color: #008CBA;">APP HỌC GIAO TIẾP</div>
+            <div class="animate__animated animate__fadeInLeft"  style="font-size:calc(26px + 1.5vw); font-weight: bolder; color: #008CBA;font-family: utm-eremitage;">APP HỌC GIAO TIẾP</div>
             <p class="animate__animated animate__fadeInRight" style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:calc(23px + 1.5vw);text-align: left; color: #008CBA;">CHO NGƯỜI BẬN RỘN</p>
             <h5 class="animate__animated animate__fadeInUpBig" style="font-family: sans-serif;text-align: left;font-size:calc(8px + 1.5vw); color: rgb(241, 241, 250);"><mark >Học lại từ đầu - Học để dùng được</mark></h5>
+            <br>
             <br>
             <div class="animate__animated animate__fadeInUp">
                 <a href="#support"><button class="button button--nanuk button--round-l button--text-thick button--inverted">
@@ -72,7 +76,7 @@
         <div class="container md-offset-2 col-md-8">  
             <div class="animate__animated animate__rollIn">
            <a href="https://www.facebook.com/Anh.Ngu.Mai.Lam.2020/" target="_blank"><img id="loading" style="width:50px;" src="./public/upload/fb-icon.png"> </a> 
-        <p style="display: inline;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: black; font-size: larger; font-size:x-large;">Mang "Trường Học" về nhà</p>
+        <p style="display: inline;color: black; font-size: large">Mang "Trường Học" về nhà</p>
        <a href="tel:0358118228"><p>Hỗ Trợ : <strong style="font-weight: bold;">0358 118 228</strong></p> </a>
         </div>
     </div>
@@ -133,7 +137,7 @@
 <div class="section light-bg" id="introduce">
     <div >
         <div class="section-title">
-            <h3 style="font-weight: bolder;">APP  MAILAM  ENGLISH  MANG  ĐẾN  CHO  BẠN</h3>
+            <h4 style="font-weight: bolder; text-align: center;">APP  MAILAM  ENGLISH  MANG  ĐẾN  CHO  BẠN</h4>
         </div>
 
         <ul class="nav nav-tabs nav-justified" role="tablist">
@@ -158,12 +162,13 @@
                     <img src="./public/upload/gioithieu.png" style="width: 150p;" alt="graphic" class="img-fluid rounded  align-self-start mr-lg-5 mb-5 mb-lg-0">
                     <div>
                         <br>
-                        <p style="font-size: 18px;"> với App Mailam English. Người học có thể chủ động tạo ra "một trường học" dành riêng cho mình bất cứ lúc nào và ở đâu. Ứng dụng sẽ giúp những người mới bắt đầu, đặc biệt là bị mất gốc tiếng Anh được định hướng theo phương pháp rõ ràng, khắc phục được tâm lý buồn chán
+                        <p> với App Mailam English. Người học có thể chủ động tạo ra "một trường học" dành riêng cho mình bất cứ lúc nào và ở đâu. Ứng dụng sẽ giúp những người mới bắt đầu, đặc biệt là bị mất gốc tiếng Anh được định hướng theo phương pháp rõ ràng, khắc phục được tâm lý buồn chán
                                 khi không có "người mở đường" với hệ thống Video được dạy lại từ đầu, hộp thoại được ghi âm theo cấu trúc từng bài học; Cô đọng hệ thống Ngữ pháp nổi bật của từng bài; Cuối cùng là phần luyện tập không chỉ tổng hợp lại kiến thức mà bắt buộc học viên phải hoàn thành bài kiểm tra mới tiếp tục chuyển sang bài học tiếp theo,
                                 giúp người học "yêu lại từ đầu" và dùng được tiếng Anh ngay cả khi giao tiếp với người nước ngoài.
                             <br>
                        <br>
                                 Ứng dụng được vận hành trên 2 nền tảng IOS và Android.
+                            <br>
                             <br>
                             &nbsp; <a target="_blank" href="https://apps.apple.com/us/app/anh-ng%E1%BB%AF-mai-l%C3%A2m/id1509669643 "> <img src="./public/upload/dl_ip.PNG" style="width: 120px; height: 40px;"></a>&nbsp;
                             <a target="_blank" href="https://play.google.com/store/apps/details?id=com.mlcrazy.english "><img src="./public/upload/dl_ad.PNG" style="width: 120px; height: 40px;"></a>
@@ -177,7 +182,7 @@
                 <div class="d-flex flex-column flex-lg-row">
                     <div>
                         <br>
-                        <p style="font-size: 18px;">Điểm nổi bật của ứng dụng chính là chương trình học được dạy lại từ đầu, thể hiện sinh động qua hình thức Video do chính Ths. Nguyễn Mai Lâm – CEO Công ty và là người sáng lập ứng dụng trực tiếp giảng dạy, giúp những người mới bắt đầu, đặc biệt là bị mất gốc tiếng Anh được định hướng theo phương pháp học rõ ràng, khắc phục được tâm lý buồn chán khi không có “người mở đường”
+                        <p>Điểm nổi bật của ứng dụng chính là chương trình học được dạy lại từ đầu, thể hiện sinh động qua hình thức Video do chính Ths. Nguyễn Mai Lâm – CEO Công ty và là người sáng lập ứng dụng trực tiếp giảng dạy, giúp những người mới bắt đầu, đặc biệt là bị mất gốc tiếng Anh được định hướng theo phương pháp học rõ ràng, khắc phục được tâm lý buồn chán khi không có “người mở đường”
                             24 Video dạy lại từ đầu, tổng hợp toàn bộ kiến thức nền tảng của chương trình tiếng Anh giao tiếp. Giúp học vien tự xây dựng hàng ngàn câu giao tiếp chỉ sau 9 bài học
                         </p>
                        
@@ -192,10 +197,10 @@
                     <img src="./public/upload/ontap.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                     <div>
                       <br>
-                        <p style="font-size: 18px;">Sau Video bài giảng, học viên có thể tự ôn tập kiến thức của bài với các tính năng:
-                            <p style="font-size: 18px;">- Từ vựng với hệ thống phiên âm quốc tế</p> 
-                            <p style="font-size: 18px;">- Hộp thoại được ghi âm theo cấu trúc từng bài học</p>
-                            <p style="font-size: 18px;">- Cô đọng hệ thống Ngữ pháp nổi bật của từng bài</p>
+                        <p >Sau Video bài giảng, học viên có thể tự ôn tập kiến thức của bài với các tính năng:
+                            <p >- Từ vựng với hệ thống phiên âm quốc tế</p> 
+                            <p >- Hộp thoại được ghi âm theo cấu trúc từng bài học</p>
+                            <p >- Cô đọng hệ thống Ngữ pháp nổi bật của từng bài</p>
                         </p>
                         
                     </div>
@@ -207,7 +212,7 @@
                 <div class="d-flex flex-column flex-lg-row">
                     <div>
                         <br>
-                        <p style="font-size: 18px;">Phần luyện tập không chỉ giúp tổng hợp lại kiến thức mà bắt buộc học viên phải hoàn thành bài kiểm tra mới tiếp tục chuyển sang bài học tiếp theo, giúp tạo động lực để học và luyện tập mỗi ngày.</p>
+                        <p >Phần luyện tập không chỉ giúp tổng hợp lại kiến thức mà bắt buộc học viên phải hoàn thành bài kiểm tra mới tiếp tục chuyển sang bài học tiếp theo, giúp tạo động lực để học và luyện tập mỗi ngày.</p>
                     </div>
                     <img src="./public/upload/luyentap.png" alt="graphic" class="img-fluid rounded align-self-start mr-lg-5 mb-5 mb-lg-0">
                 </div>
@@ -223,7 +228,7 @@
 <div class="section" id="video">
     <div class="container">
         <div class="section-title">
-            <h3 style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold;" data-aos="fade-up">VIDEO</h3>
+            <h4 style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; position: relative; top: 30px; " data-aos="fade-up">VIDEO</h4>
         </div>
         <section class="page-section" id="video">
             <section class="video__content">
@@ -249,7 +254,7 @@
 <div class="section light-bg" id="support">
     <div class="container">
         <div class="section-title">
-            <h3 style="font-weight: bolder; color: #fff;">HỌC THỬ NGAY</h3>
+            <h4 style="font-weight: bolder; color: #fff; position: relative; top: 30px;">HỌC THỬ NGAY</h4>
         </div>
         <div class="row">
     
@@ -303,7 +308,7 @@
 <div class="section" id="customer">
     <div class="container">
         <div class="section-title">
-            <h3 style="font-weight: bolder;">NGƯỜI DÙNG NÓI GÌ VỀ APP MAILAM ENGLISH</h3>
+            <h4 style="font-weight: bolder;">NGƯỜI DÙNG NÓI GÌ VỀ APP MAILAM ENGLISH</h4>
         </div>
         <div class="testimonials owl-carousel">
             <div class="testimonials-single">
@@ -321,7 +326,22 @@
                 <h3>Th.S Tâm lý Đào Lê Hoà An</h3>
                 <blockquote class="blockquote">Với cái việc ra đời app như thế này thì tôi thấy nó rất là đáp ứng cái nhu cầu về tâm lý vì rõ ràng là với những người đã đi làm hay là những người có địa vị xã hội thì họ cũng rất lạ ngại để mà có thể trực tiếp đến lớp có rất nhiều người và với cái thời lượng và tính chất công việc của mình thì họ cũng sẽ không có thể sắp xếp được thời gian để có thể đi đến lớp thì thông qua cái hệ thống với công cụ app trực tuyến trên điện thoại như thế này thì đây rõ ràng là một trong những cái hướng mà có thể giúp cho những người bận rộn có thể học bất cứ nơi đâu, bất kỳ chỗ nào và chỉ cần mở app ra là chúng ta có thể tương tác với sự hướng dẫn rất là khoa học cũng như dí dỏm và đặc biệt là rất am hiểu về cái hưởng để có thể giúp cho những người mất gốc tiếng anh có thể lấy lại được cái căn bản và tự tin trong việc giao tiếp tiếng anh với người nước ngoài</blockquote>
             </div>
-        </div>
+            <div class="testimonials-single">
+                <img src="./public/upload/background/my nguyen.png" alt="client" class="client-img">
+                <h3>Doanh nhân Mỹ Nguyễn</h3>
+                <blockquote class="blockquote"><a class="h1">“</a>Cùng là người khá là bận rộn, mình luôn dành nhiều thời gian cho công ty và gia đình. Cho nên là cái quý thời gian mà để học tập của mình khó mà có thể cố định được. Chính vì như vậy khi có cái app tự học tiếng Anh, mình cảm thấy khá là tiện dụng. Và mình có thể tận dụng với bất cứ thời gian nào, vì thời gian đối những người làm doanh nghiệp như chị rất là quý giá.</blockquote>
+            </div>
+            <div class="testimonials-single">
+                <img src="./public/upload/background/pham thanh.png" alt="client" class="client-img">
+                <h3>Siêu mẫu Phạm Thành</h3>
+                <blockquote class="blockquote"><a class="h1">“</a>Trước khi đi diễn thì Thành thườn mở app ra học từ vựng hoặc xem các video có sẵn và trước khi đi ngủ Thành cũng mở ra học các từ vựng của thầy rất là hay, mang đến nhiều kiến thức cho Thành. Ngày xưa, một chứ Thành cũng chẳng biết nữa, giờ chỉ có từ năm đến bảy buổi thôi giờ thành ra đường là đã nói được rồi, vô siêu thị gặp Tây là Thành nói được hết không có sợ đâu.</blockquote>
+            </div>
+
+            <div class="testimonials-single">
+                <img src="./public/upload/background/Pham Thi Trang.png" alt="client" class="client-img">
+                <h3>Giảng viên Phạm Thị Trang</h3>
+                <blockquote class="blockquote"><a class="h1">“</a>Ai đang trong thời kỳ làm mẹ bỉm sữa mà bị stress giống mình không, và mình đã tìm ra giải pháp để giải tóa đó chính là học tiếng anh giao tiếp qua app Mailam English thì đây là một app học tiếng anh rất là hiệu quả và tiện dụng. Mẹ bỉm nào muốn học tiếng anh thì có thể tải ngay ứng dụng này để trải nghiệm nhé</blockquote>
+            </div>
     </div>
 </div>
 <!--end customer say-->
@@ -331,7 +351,7 @@
 <div class="section light-bg" id="artical">
     <div class="container">
         <div class="section-title">
-            <h3 style="font-weight: bolder;">BÁO CHÍ NÓI VỀ APP MAILAM ENGLISH</h3>
+            <h4 style="font-weight: bolder; position: relative; top: 30px;">BÁO CHÍ NÓI VỀ APP MAILAM ENGLISH</h4>
        
         </div>
         <div class="img-gallery owl-carousel owl-theme" >
@@ -351,42 +371,67 @@
 <div class="section pt-0" id="question">
     <div class="container">
         <div class="section-title">
-            <h3>Góc hỏi đáp</h3>
+            <h4 style="position: relative; top: 30px; font-weight: bolder;">GÓC HỎI ĐÁP</h3>
         </div>
         <div class="qs">
 
         
-        <div class="row pt-4">
-            <div class="col-md-6">
-                <h4 class="mb-3">Thầy Mai Lâm là ai?</h4>
-                <div style="color: black;"></div>
-                <p class="light-font mb-5">Thầy Mai Lâm “Crazy” được nhiều bạn trẻ biết đến bởi chương trình và phương pháp đào tạo
-                    Tiếng Anh độc đáo, hài hước, lôi cuốn nhưng luôn mang đến những hiểu quả không ngờ. Báo Thanh Niên, 
-                    Tuổi Trẻ, HTV9, VTC10… đã thực hiện rất nhiều phóng sự về thành công của Thầy trong việc Lấy Lại Căn Bản 
-                    Tiếng Anh cho người “mất gốc”, “Tiếng Anh làm lại từ đầu”. Bên cạnh đó thì các hoạt động của Thầy luôn tạo ra
-                    sức lan tỏa mạnh mẽ như: TNV Quốc Tế dạy Tiếng Anh miễn phí; Thiện nguyện từ Việt Nam đến Đông Nam Á và Châu Phi.</p>
-
-                <h4 class="mb-3">Tại sao tôi phải mua app MaiLam English?</h4>
-                <p class="light-font mb-5">Phương pháp giảng dạy độc đáo mới lạ do chính thầy Mai Lâm biên soạn và giảng dạy,
-                    giúp học viên xây dựng lại căn bản tiếng anh từ nền tảng của bảng phiên âm quốc tế đến ứng dụng 12 thì
-                    vào giao tiếp. Từ vựng, ngữ pháp, hộp thoại phong phú, dễ hiểu ứng dụng được ngay vào thực tế.</p>
+            <div class="row pt-4">
+                <div class="col-md-6">
+                    <h4 class="mb-3" style="font-size: large; font-weight: bold;">Thầy Mai Lâm là ai?</h4>
+                    <div style="color: black;"></div>
+                    <p class="light-font mb-5">Thầy Mai Lâm “Crazy” được nhiều bạn trẻ biết đến bởi chương trình và phương pháp đào tạo
+                        Tiếng Anh độc đáo, hài hước, lôi cuốn nhưng luôn mang đến những hiểu quả không ngờ. Báo Thanh Niên, 
+                        Tuổi Trẻ, HTV9, VTC10… đã thực hiện rất nhiều phóng sự về thành công của Thầy trong việc Lấy Lại Căn Bản 
+                        Tiếng Anh cho người “mất gốc”, “Tiếng Anh làm lại từ đầu”. Bên cạnh đó thì các hoạt động của Thầy luôn tạo ra
+                        sức lan tỏa mạnh mẽ như: TNV Quốc Tế dạy Tiếng Anh miễn phí; Thiện nguyện từ Việt Nam đến Đông Nam Á và Châu Phi.</p>
+    
+                    <h4 class="mb-3 " style="font-size: large; font-weight: bold;">Tại sao tôi phải mua app MaiLam English?</h4>
+                    <p class="light-font mb-5">Phương pháp giảng dạy độc đáo mới lạ do chính thầy Mai Lâm biên soạn và giảng dạy,
+                        giúp học viên xây dựng lại căn bản tiếng anh từ nền tảng của bảng phiên âm quốc tế đến ứng dụng 12 thì
+                        vào giao tiếp. Từ vựng, ngữ pháp, hộp thoại phong phú, dễ hiểu ứng dụng được ngay vào thực tế.</p>
+                        <h4 class="mb-3" style="font-size: large; font-weight: bold;">Làm thế nào để mua App, học phí bao nhiêu ?</h4>
+                        <p class="light-font mb-5">Liên hệ thư ký hỗ trợ <a href="tel:0358118228">0358. 118. 228</a> , học phí hiện đang ưu đãi 50% chỉ còn 2.000.000 trên tổng toàn bộ khóa học và được tặng 2 file tài liệu.</p>
+    
+                        <h4 class="mb-3" style="font-size: large; font-weight: bold;">Đối tượng và độ tuổi nên học qua App ?</h4>
+                        <p  class="light-font mb-5">Độ tuổi từ 12 tuổi trở lên. Đối tượng học app là các bà mẹ Bỉm sữa, anh chị Nghệ sĩ, Sinh viên hay anh chị Công nhân người không có thời gian cố định. Tất cả học viên muốn cải thiện tiếng anh, học lại tiếng anh từ đâu.</p>
+                </div>
+                
+                <div class="col-md-6">
+                    <h4 class="mb-3" style="font-size: large; font-weight: bold;">Tôi có thể sử dụng app trên bao nhiêu thiết bị.</h4>
+                    <p class="light-font mb-5">App được hỗ trợ và sử dụng tốt nhất trên điện loại và máy tính
+                        bảng sự dụng hệ điều hành Android hoặc IOS.
+                        Bạn chỉ cần đăng nhập lại vào đúng tài khoản mình đã đăng ký là được nhé.</p>
+    
+                        <h4 class="mb-3" style="font-size: large; font-weight: bold;">App có thể sử dụng trong bao lâu?</h4>
+                        <p class="light-font mb-5">App hiện tại đang được hỗ trợ sử dụng trong vòng 1 năm để
+                             tránh tình trạng học viên kéo dài thời gian học, học được mấy bài đầu tiên thì lại kéo tới
+                             mấy tháng sau mới học tiếp khiến cho việc học trở nên không hiệu quả.</p>
+    
+    
+                    <h4 class="mb-3" style="font-size: large; font-weight: bold;">Tôi không biết gì về tiếng Anh hết có học được không?</h4>
+                    <p class="light-font mb-5">App xây dựng dành riêng cho người mất gốc tiếng Anh và muốn lấy lại căn bản tiếng anh.</p>
+    
+                    <h4 class="mb-3" style="font-size: large; font-weight: bold;">Nội dung của khóa học là gì ?</h4>
+                    <p class="light-font mb-5">App bao gồm đầy đủ lộ trình học của khóa học nền tảng với 24 bài học.<br> Giảng dạy lại từ bảng chữ cái và phiên âm quốc tế để có thể đọc đúng bất cứ từ nào khi nhìn vào phiên âm.<br>
+    
+                        Hiểu rõ về từ loại.<br>
+                        
+                        Chủ động xây dựng và trả lời được trên 1.000 câu hỏi mà không cần dựa vào mẫu câu có sẵn.<br>
+                        
+                        Khắc phục được những lỗ hỏng về ngữ pháp thường gặp.<br>
+                        
+                        Phát triển câu hỏi nâng cao, câu hỏi dài.<br>
+                        
+                        Sử dụng thành thạo giới từ<br>
+                        
+                        Ứng dụng các thì vào giao tiếp.<br>
+                        
+                        Ứng dụng cấu trục ngữ pháp vào giao tiếp<br>
+                        
+                        Sử dụng thành thạo các liên từ tạo thành câu ghép, câu dà</p>           
+                 </div>
             </div>
-            <div class="col-md-6">
-                <h4 class="mb-3">Tôi có thể sử dụng app trên bao nhiêu thiết bị.</h4>
-                <p class="light-font mb-5">App được hỗ trợ và sử dụng tốt nhất trên điện loại và máy tính
-                    bảng sự dụng hệ điều hành Android hoặc IOS.
-                    Bạn chỉ cần đăng nhập lại vào đúng tài khoản mình đã đăng ký là được nhé.</p>
-
-                    <h4 class="mb-3">App có thể sử dụng trong bao lâu?</h4>
-                    <p class="light-font mb-5">App hiện tại đang được hỗ trợ sử dụng trong vòng 1 năm để
-                         tránh tình trạng học viên kéo dài thời gian học, học được mấy bài đầu tiên thì lại kéo tới
-                         mấy tháng sau mới học tiếp khiến cho việc học trở nên không hiệu quả.</p>
-
-
-                <h4 class="mb-3">Tôi không biết gì về tiếng Anh hết có học được không?</h4>
-                <p class="light-font mb-5">App xây dựng dành riêng cho người mất gốc tiếng Anh và muốn lấy lại căn bản tiếng anh.</p>
-            </div>
-        </div>
         </div>
     </div>
 </div>
@@ -439,58 +484,40 @@
 <!--end contact-->
 
 <!--begin footer-->
-<div class="light-bg py-5" id="footer">
-    <div class="container">
-        <div class="section-title">
-            <h3 style="font-weight: bolder;">LIÊN HỆ</h3>
-            <h3 style="font-weight:bolder; font-size: large; padding-left: 40px; color: black;
-            font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
-            font-size: 20px;">CTY CỔ PHẦN TRUYỀN THÔNG & GIÁO DỤC QUỐC TẾ RESTART 
-                TRUNG TÂM NGOẠI NGỮ MAI LÂM
-            </h3>
-        </div>
-        <div class="row">
-            <div class="col-lg-6 text-center text-lg-left" style=" color: black;
-            font-family: 'Cambria, Cochin, Georgia, Times, Times New Roman, serif';
-            font-size: 20px;">
-                <h3 style="font-weight:bolder; font-size: large; color: black; text-align: le; padding-left: 40px;">HOTLINE HỖ TRỢ
-                </h3>
-                <br>
-                <span class="ti-headphone-alt mr-2"> <a target="blank" href="tel:0358118228">0358 118 228</a> -  <a href="tel:0853226228">0853 226 228</a></span><br><br>
-                <span class="ti-facebook mr-2"><a target="blank" href="https://www.facebook.com/Anh.Ngu.Mai.Lam.2020/">Mai Lam English</a> </span><br><br>
-               <span class="ti-youtube mr-2"><a target="blank" href="https://www.youtube.com/channel/UCfQpTLoqIO1GZVtGJtH4UHQ">Nguyễn Mai Lâm</a></span>
-                <br>
-                <br>
-              <span class="ti-world"><a target="blank" href="http://mailam.edu.vn/">mailam.edu.vn</a></span> <br>
-             
+<footer id="footer">
+    <section class="footer__title">LIÊN HỆ</section>
+    <section class="footer__infor">
+        <div class="footer__infor--hotline">
+            <div class="footer__infor--hotline__title" style="font-size: large;">Hotline hỗ trợ</div>
+            <div class="footer__infor--hotline__content">
+                <div class="phone">
+                    <p style="font-size: larger; color: rgb(42, 231, 42)" class="fa fa-phone-square mr-2"> &nbsp;&nbsp; <a style="font-size: larger;" target="blank" href="tel:0358118228">0358 118 228 </a> - <a style="font-size: larger;" href="tel:0853226228">0853 226 228</a></p>
+                </div>
+                <div class="fb">
+                    <p style="font-size: larger; color: rgb(74, 74, 236)" class="fa fa-facebook-official mr-2"> &nbsp;<a style="color: black; font-size: larger;" target="blank" href="https://www.facebook.com/Anh.Ngu.Mai.Lam.2020/">Mailam English</p>
+                </div>
+                <div class="youtube">
+                    <p style="font-size: larger; color:rgb(228, 34, 34);" class="fa fa-youtube-play mr-2"> &nbsp; <a style="color: black; font-size: larger;" target="blank" href="https://www.youtube.com/channel/UCfQpTLoqIO1GZVtGJtH4UHQ">Nguyễn Mai Lâm</p>
+                </div>
+                <div class="web">
+                    <p style="font-size: larger; color: rgb(61, 58, 58)" class="fa fa-google mr-2"> &nbsp;<a style="color: black; font-size: larger;" target="blank" href="http://mailam.edu.vn/">Mailam.edu.vn</p>
+                </div>
+                <div class="license">
+                    <p><img class="mr-2" src="./public/upload/dathongbaobct.png" style="width: 150px;" alt="license"></p>                  
+                </div>
             </div>
-            <div class="col-lg-6 text-center text-lg-left">
-          
-                <p class="mb-2"> <span class="ti-location-pin mr-2"></span>  Chi nhánh 1: MAI LÂM QUẬN 3 - 146 Võ Thị Sáu, Phường 8, Quận 3, TP.HCM</p>
-                <p class="mb-2"> <span class="ti-location-pin mr-2"></span>  Chi nhánh 2: MAI LÂM THỦ ĐỨC - Nhà Văn Hoá Sinh Viên, Làng Đại Học Quốc Gia, Q. Thủ Đức, TP.HCM</p>
-                <div class=" d-block d-sm-inline-block">
-                    <p class="mb-2"><span class="ti-email mr-2"></span> <a class="mr-4" href="mailto:anhngumailamcrazy@gmail.com">anhngumailamcrazy@gmail.com</a></p>
-                </div>
-
-                <div class="d-block d-sm-inline-block">
-                    <p class="mb-0"><span class="ti-headphone-alt mr-2"></span><a href="tel:0358118228">0358 118 228</a></p>
-                   
-                </div>
-                <div class="d-block d-sm-inline-block">
-                    <img src="./public/upload/dathongbaobct.png" style="width: 100px;" alt="">
-                   
-                </div>
-                
-            </div>
-            <!-- <div class="col-lg-6">
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/nguyenmailam.info" target="_blank"><span class="ti-facebook"></span></a>
-                    <a href="https://www.youtube.com/channel/UCfQpTLoqIO1GZVtGJtH4UHQ"  target="_blank"><span class="ti-youtube"></span></a>
-                </div>
-            </div> -->
         </div>
-    </div>
-</div>
+        <div class="footer__infor--branch">
+            <div class="footer__infor--branch__title" style="font-size: large;">
+                Công ty cổ phần truyền thông & giáo dục quốc tế restart - trung tâm ngoại ngữ mai lâm
+            </div>
+            <div class="footer__infor--branch__content">
+                <p class="mb-2" style="color: black; font-size: 16px; text-align: center;"> <span class="ti-location-pin mr-2"></span>  Chi nhánh 1: MAI LÂM QUẬN 3 - 146 Võ Thị Sáu, Phường 8, Quận 3, TP.HCM</p>
+                <p class="mb-2" style="color: black; font-size: 16px; text-align: center;"> <span class="ti-location-pin mr-2"></span>  Chi nhánh 2: MAI LÂM THỦ ĐỨC - Nhà Văn Hoá Sinh Viên, Làng Đại Học Quốc Gia, Q. Thủ Đức, TP.HCM</p>  
+            </div>
+        </div>     
+    </section>
+</footer>
 <!--end footer-->
 
     <!-- jQuery and Bootstrap -->

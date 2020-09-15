@@ -58,7 +58,6 @@ h1 {
     font-size: 60px;
     font-weight: 300;
     letter-spacing: -1px;
-    margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -66,7 +65,6 @@ h2 {
     font-weight: 300;
     color: #1d7bcc;
     letter-spacing: -1px;
-    margin-bottom: 1rem;
 }
 
 h3 {
@@ -85,7 +83,6 @@ h5 {
     font-size: 28px;
     font-weight: 300;
     color: #1d7bcc;
-    margin-bottom: 0.7rem;
 }
 
 p {
@@ -102,13 +99,12 @@ p.lead {
 }
 
 .light-font {
-  color: #333333;
+    color: #333333;
     font-weight: 300;
 }
 
 .btn {
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 18px;
     text-transform: uppercase;
     padding: 0.375rem 1.35rem;
     transition: all 0.3s ease;
@@ -194,18 +190,19 @@ p.lead {
   background-position: bottom; /* Bottom the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  padding: 30px 0 30px;
+  padding: 0
 }
 
 .glow-on-hover {
-    padding:10px 30px;
+    font-size: 18px;
+    font-weight: 300;
     border: none ;
     outline: none;
     color: #008CBA;
     cursor: pointer;
     position: relative;
     z-index: 0;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
 .glow-on-hover:before {
@@ -400,7 +397,7 @@ p.lead {
 
 
 .nav-menu {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     transition: all 0.5s ease-in;
     color:#FFF;
 }
@@ -424,32 +421,37 @@ p.lead {
 }
 
 @media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 2rem;
-        padding-left: 2rem;
-        padding-top: 1rem;
-        font-size: 16px;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-    .navbar-nav>.nav-item>.nav-link.active:after {
-        content: "";
-        border-bottom: 1px solid black;
-        left: 1rem;
-        right: 1rem;
-        bottom: 5px;
-        height: 1px;
-        position: absolute;
-    }
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1.7rem;
+      padding-left: 1.7rem;
+      padding-top: 0.5rem;
+      font-size: 14px;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+  .navbar-nav>.nav-item>.nav-link.active:after {
+      content: " ";
+      border-bottom: 1.5px solid black;
+      left: 1rem;
+      right: 1rem;
+      bottom: 3px;
+      height: 1px;
+      position: absolute;
+      text-transform: uppercase;
+      font-weight: bold;
+  }
 }
 
 @media (max-width:991px) {
-    .navbar-nav.is-scrolling {
-        padding-bottom: 0.5rem;
-    }
-    .navbar-nav .nav-item {
-        text-align: center;
-    }
+  .navbar-nav.is-scrolling {
+      padding-bottom: 0.5rem;
+  }
+  .navbar-nav .nav-item {
+      text-align: center;
+  }
 }
+
 
 
 /* HERO
@@ -717,7 +719,7 @@ section#video{
   background-position: bottom; /* Bottom the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  padding: 30px 0 30px;
+  padding: 30px 0 0 0px;
 }
 
 .tab-content {
@@ -750,7 +752,7 @@ section#video{
   border-color: #faf6fb #faf6fb #FFF;
   color: #FFF;
   background: #008fb2;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -758,20 +760,21 @@ section#video{
   background: #f5eff7;
   border-color: black;
   color: black;
-  font-size: 16px;
+  font-size: 12x;
   font-weight: bold;
  
 }
 
 
+
 /*  TESTIMONIALS
 ----------------------*/
-#customer{
-  background-image: url(../upload/3.png);
-  background-position: bottom; /* Bottom the image */
+#customer {
+  background-image: url(/public/upload/3.png);
+  background-position: center; /* Bottom the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  padding: 30px 0 30px;
+  padding: 0;
 }
 .owl-carousel .owl-item img.client-img {
   width: 220px;
@@ -970,9 +973,9 @@ section#advisory{
       justify-content: center;
       align-items: flex-end;
       font-weight: bolder;
-      font-size: 33px;
+      font-size: 20px;
       text-align: center;
-      padding: 2% 0 0 0;
+      padding: 5% 0 0 0;
       margin-bottom: 0;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -1169,12 +1172,179 @@ section#advisory{
 
 /*  FOOTER
 ----------------------*/
-#footer{
-  background-image: url("../upload/3.png");
+footer#footer{
+  /* border: 1px solid #000; */
+ 
+  background-image: url("../upload/background/3.png");
   background-position: bottom; /* Bottom the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   padding: 30px 0 30px;
+}
+  #footer .footer__title{
+      color: #008aef;
+      text-transform: uppercase;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-weight: bolder;
+      font-size: 20px;
+      text-align: center;
+      padding: 2% 0 0 0;
+  }
+  #footer .footer__infor{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 2%;
+  }
+          #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__title{
+              text-transform: uppercase;
+              font-weight: 900;
+              padding: 2% 2% 2% 10%;
+              font-size: 1rem;
+              width: 70%;
+              height: 20%;
+              text-align: left;
+              display: flex;
+              align-items: flex-end;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          }
+              #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__content div{
+                  display: flex;
+                  padding: 1%;
+              }
+                  #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__content div img{
+                      width: 8%;
+                  }
+                  #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__content div p{
+                      display: flex;
+                      align-items: center;
+                      padding-left: 3%;
+                  }
+
+
+      #footer .footer__infor .footer__infor--branch{
+          display: flex;
+          flex-direction: column;
+          padding: 1%;
+      }
+          #footer .footer__infor .footer__infor--branch .footer__infor--branch__title{
+              text-transform: uppercase;
+              font-weight: 900;
+              padding: 2% 2% 2%;
+              font-size: 1rem;
+              width: 90%;
+              text-align: left;
+              align-self: flex-end;
+              font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          }
+              #footer .footer__infor .footer__infor--branch .footer__infor--branch__content div{
+                  display: flex;
+                  padding: 1%;
+              }
+                  #footer .footer__infor .footer__infor--branch .footer__infor--branch__content div img{
+                      width: 8%;
+                  }
+                  #footer .footer__infor .footer__infor--branch .footer__infor--branch__content div p{
+                      display: flex;
+                      align-items: center;
+                      font-weight: 500;
+                      padding-left: 3%;
+                  }
+
+@media (max-width: 992px) {
+  .contact-from .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1070px){
+  #footer .footer__infor{
+      grid-template-columns: .5fr 1fr;
+  }
+  #footer .footer__infor .footer__infor--branch{
+      padding: 5%;
+  }
+}
+@media screen and (max-width: 862px){
+  #footer .footer__infor .footer__infor--branch{
+      padding: 0%;
+  }
+}
+@media screen and (max-width: 785px){
+  #footer .footer__infor{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+      #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__title{
+          margin: auto;
+          width: 100%;
+          justify-items: center;
+          padding-left: 0;
+      }
+          #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__content{
+              display: flex;
+              flex-wrap: wrap;
+          }
+              #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__content div{
+                  width: 50%;
+                  margin: 0 auto; 
+              }
+
+
+      #footer .footer__infor .footer__infor--branch{
+          width: 80%;
+      }
+}
+@media screen and (max-width: 652px){
+  #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__content{
+      padding-bottom: 5%;
+  }
+  #footer .footer__infor .footer__infor--branch{
+      width: 90%;
+  }
+}
+@media screen and (max-width: 585px){
+  #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__content{
+      padding-bottom: 5%;
+  }
+  #footer .footer__infor .footer__infor--branch{
+      width: 100%;
+      padding: 0 0 2% 0;
+  }
+}
+@media screen and (max-width: 540px){
+  #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__title{
+      margin: auto;
+      width: 90%;
+  }
+  #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__content{
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 5%;
+  }
+      #footer .footer__infor .footer__infor--hotline .footer__infor--hotline__content div{
+          width: 95%;
+          margin: 0 auto; 
+      }
+}
+@media screen and (max-width: 525px){
+  #footer .footer__infor .footer__infor--branch .footer__infor--branch__content div p{
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      padding:0;
+      font-size: 15px;
+  }
+}
+@media screen and (max-width: 490px){
+  #footer .footer__infor .footer__infor--branch .footer__infor--branch__content div img{
+      width: 10%;
+      height: 10%;
+  }
 }
 .social-icons {
     text-align: right;
@@ -1221,7 +1391,7 @@ section#advisory{
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
   position: relative;
-  padding: 30px 0 30px;
+  padding: 0 30px;
 }
 
 
