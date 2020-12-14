@@ -186,38 +186,40 @@ h4.mb-3 {
 
 .btn-button1 {
   background-color: #FFF;
+  padding: 5px 10px;
   color: #008CBA; 
   border: 2px solid #008CBA;
   border-radius: 40px;
-  padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: calc(8px + 1vw);
+  font-size: calc(6px + 1vw);
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
 .btn-button2 {
-background-color: #008CBA;
-color: #FFF; 
-border: 2px solid #008CBA;
-border-radius: 40px;
-padding: 16px 32px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: calc(8px + 1vw);
-margin: 4px 2px;
-transition-duration: 0.4s;
-cursor: pointer;
+  padding: 5px 10px;
+  background-color: #008CBA;
+  color: #FFF; 
+  border: 2px solid #008CBA;
+  border-radius: 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: calc(6px + 1vw);
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
 }
 .btn-button1:hover {
 background-color: #008CBA;
+text-decoration: none;
 color: #FFF;
 }
 .btn-button2:hover {
 background-color: #FFF;
+text-decoration: none;
 color: #008CBA;
 }
 
@@ -356,11 +358,10 @@ header {
 }
 
 .bg-gradient {
-    background-image: url("../upload/background.png");
-    background-position: bottom; /* Bottom the image */
+    background-image: url("../upload/background.png"); /* Bottom the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
-   
+    background-position: center;
 }
 .bg-qr-code {
   background-image: url("../upload/background/2.png");
@@ -894,7 +895,7 @@ section#advisory{
               
 
   #advisory .advisory__contact{
-      padding: 2%;
+      padding: 0;
       color: #fff;
       text-align: center;
       font-size: 2em;
@@ -914,7 +915,6 @@ section#advisory{
           }
           
           .wrap .buttonn {
-            
             min-width: calc(200px + 0.5vw);
             min-height: calc(50px + 0.5vw);
             font-family: 'Nunito', sans-serif;
@@ -927,9 +927,8 @@ section#advisory{
             transition: all 0.3s ease-in-out 0s;
             cursor: pointer;
             outline: none;
-            position: relative;
-            top: -30px;
             border-color: 5px solid black;
+            margin-top: calc(-120px + 1vw);
             }
           
             .wrap  button::before {
@@ -998,6 +997,7 @@ section#advisory{
 }
 @media screen and (max-width: 650px){
   #advisory .advisory__form{
+      line-height: 1.6rem;
       display: flex;
   }
   #advisory .unhidden{
@@ -1012,6 +1012,7 @@ section#advisory{
       display: flex;
       flex-direction: column;
       height: 100%;
+      padding-bottom: 80px;
   }
   #advisory .hidden p{
     display: flex;
