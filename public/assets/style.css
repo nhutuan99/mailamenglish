@@ -368,7 +368,7 @@ header {
   background-position: center; /* Bottom the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover;
-  padding-bottom: 220px;
+  height: 100vh;
 }
 
 #loading {
